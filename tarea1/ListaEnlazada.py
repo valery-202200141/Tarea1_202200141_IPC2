@@ -7,7 +7,6 @@ class ListaEnlazada:
 
     def insertar_ordenado(self, persona):
         nuevo_nodo = Nodo(persona)
-        
         if self.inicio is None:
             self.inicio = nuevo_nodo
             self.fin = nuevo_nodo
@@ -16,6 +15,7 @@ class ListaEnlazada:
         actual = self.inicio
         while actual is not None and actual.persona.edad <= persona.edad:
             actual = actual.siguiente
+        
         if actual is None:
             nuevo_nodo.anterior = self.fin
             self.fin.siguiente = nuevo_nodo

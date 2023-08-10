@@ -1,12 +1,14 @@
-from persona import persona
 from ListaEnlazada import ListaEnlazada
+from Persona import Persona
+
+
 def main():
     lista_personas = ListaEnlazada()
 
-    persona1 = persona(1, "Alice", 30)
-    persona2 = persona(2, "Bob", 25)
-    persona3 = persona(3, "Charlie", 40)
-    persona4 = persona(4, "David", 22)
+    persona1 = Persona(1, "Juan", 19)
+    persona2 = Persona(2, "Jacobo", 20)
+    persona3 = Persona(3, "Darlin", 17)
+    persona4 = Persona(4, "Doris", 22)
 
     lista_personas.insertar_ordenado(persona1)
     lista_personas.insertar_ordenado(persona2)
